@@ -1,7 +1,7 @@
 > 中文翻译 | [English](UPGRADING.md)
 > 同步基线:commit `0de6c40`(2026-07-29);如有出入以英文版为准。
 
-# 升级 Claude Code Game Studios
+# 升级 AI Game Studios
 
 本指南介绍如何把现有游戏项目仓库从模板的一个版本升级到下一个版本。
 
@@ -35,7 +35,7 @@ git log --oneline | grep -i "release\|setup"
 
 ```bash
 # 把模板添加为远程仓库(一次性设置)
-git remote add template https://github.com/Donchitos/Claude-Code-Game-Studios.git
+git remote add template https://github.com/bokmark/ai-game-studio.git
 
 # 拉取新版本
 git fetch template main
@@ -58,7 +58,7 @@ Git 只会在模板*和你*都改过的文件上标记冲突。逐个解决—�
 适用场景:你只想要某一个特性(比如只要新技能,不要完整更新)。
 
 ```bash
-git remote add template https://github.com/Donchitos/Claude-Code-Game-Studios.git
+git remote add template https://github.com/bokmark/ai-game-studio.git
 git fetch template main
 
 # 拣选你想要的特定提交

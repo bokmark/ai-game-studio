@@ -1,6 +1,6 @@
 > [中文翻译](WORKFLOW-GUIDE.zh-CN.md)
 
-# Claude Code Game Studios -- Complete Workflow Guide
+# AI Game Studios -- Complete Workflow Guide
 
 > **How to go from zero to a shipped game using the Agent Architecture.**
 >
@@ -72,7 +72,7 @@ Start a new Claude Code session. You should see output from the
 `session-start.sh` hook:
 
 ```
-=== Claude Code Game Studios -- Session Context ===
+=== AI Game Studios -- Session Context ===
 Branch: main
 Recent commits:
   abc1234 Initial commit

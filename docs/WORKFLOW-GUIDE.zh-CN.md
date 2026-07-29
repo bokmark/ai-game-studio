@@ -1,7 +1,7 @@
 > 中文翻译 | [English](WORKFLOW-GUIDE.md)
 > 同步基线:commit `41d7e09`(2026-07-29);如有出入以英文版为准。
 
-# Claude Code Game Studios——完整工作流指南
+# AI Game Studios——完整工作流指南
 
 > **如何使用代理架构从零走到游戏发布。**
 >
@@ -67,7 +67,7 @@ cd my-game
 启动一个新的 Claude Code 会话。你应该看到 `session-start.sh` 钩子的输出:
 
 ```
-=== Claude Code Game Studios -- Session Context ===
+=== AI Game Studios -- Session Context ===
 Branch: main
 Recent commits:
   abc1234 Initial commit

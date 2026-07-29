@@ -13,7 +13,7 @@
 
 请使用 GitHub 的私密漏洞报告功能:
 
-**[报告漏洞 →](https://github.com/Donchitos/Claude-Code-Game-Studios/security/advisories/new)**
+**[报告漏洞 →](https://github.com/bokmark/ai-game-studio/security/advisories/new)**
 
 请尽可能提供细节:
 - 漏洞描述及其影响范围
@@ -28,7 +28,7 @@
 
 ## 哪些在范围内
 
-CCGS 是一个**本地开发工具**——它安装 shell 钩子并协调直接运行在你
+AIGS 是一个**本地开发工具**——它安装 shell 钩子并协调直接运行在你
 机器上的 AI 代理。安全问题主要关乎:被贡献的代码在用户不知情的情况
 下在其环境中执行。
 

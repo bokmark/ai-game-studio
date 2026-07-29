@@ -1,7 +1,7 @@
 > 中文翻译 | [English](CLAUDE.md)
 > 同步基线:commit `0de6c40`(2026-07-29);如有出入以英文版为准。
 
-# Claude Code Game Studios —— 游戏工作室代理架构
+# AI Game Studios —— 游戏工作室代理架构
 
 独立游戏开发,由 49 个协同的 Claude Code 子代理管理。
 每个代理负责一个特定领域,以此保证关注点分离与质量。

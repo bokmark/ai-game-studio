@@ -2,7 +2,7 @@
 > 同步基线:commit `0de6c40`(2026-07-29)+ 双平台 README 同步;如有出入以英文版为准。
 
 <p align="center">
-  <h1 align="center">Claude Code Game Studios</h1>
+  <h1 align="center">AI Game Studios</h1>
   <p align="center">
     把一个 AI 会话变成一个完整的游戏开发工作室。
     <br />
@@ -30,7 +30,7 @@
 
 独自用 AI 做游戏很强大——但单个聊天会话没有结构。没人阻止你硬编码魔法数字、跳过设计文档、写出面条代码。没有 QA 把关,没有设计评审,也没有人问「这真的符合游戏愿景吗?」
 
-**Claude Code Game Studios** 通过给你的 AI 会话赋予真实工作室的结构来解决这个问题。你得到的不是一个通用助手,而是 49 个按工作室层级组织的专业化代理——守护愿景的总监、拥有各自领域的部门主管、动手实现的专家。每个代理都有明确的职责、升级路径(escalation path)和质量门。
+**AI Game Studios** 通过给你的 AI 会话赋予真实工作室的结构来解决这个问题。你得到的不是一个通用助手,而是 49 个按工作室层级组织的专业化代理——守护愿景的总监、拥有各自领域的部门主管、动手实现的专家。每个代理都有明确的职责、升级路径(escalation path)和质量门。
 
 最终效果:每一个决定仍由你来做,但现在你有一支团队帮你问出正确的问题、尽早发现错误,并让项目从第一次头脑风暴到正式发布都保持井然有序。
 
@@ -321,14 +321,14 @@ production/                         # Sprint 计划、里程碑、发布跟踪
 
 ## 社区
 
-- **Discussions** ——[GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions),用于提问、想法和展示你的作品
-- **Issues** ——[缺陷报告与功能请求](https://github.com/Donchitos/Claude-Code-Game-Studios/issues)
+- **Discussions** ——[GitHub Discussions](https://github.com/bokmark/ai-game-studio/discussions),用于提问、想法和展示你的作品
+- **Issues** ——[缺陷报告与功能请求](https://github.com/bokmark/ai-game-studio/issues)
 
 ---
 
 ## 支持本项目
 
-Claude Code Game Studios 是自由开源软件。如果它为你节省了时间或帮助你发布了游戏,可以考虑支持其持续开发:
+AI Game Studios 是自由开源软件。如果它为你节省了时间或帮助你发布了游戏,可以考虑支持其持续开发:
 
 <p>
   <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
@@ -343,7 +343,7 @@ Claude Code Game Studios 是自由开源软件。如果它为你节省了时间�
 
 ---
 
-*为 Claude Code 与 OpenAI Codex 而生。持续维护与扩展——欢迎通过 [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) 贡献。*
+*为 Claude Code 与 OpenAI Codex 而生。持续维护与扩展——欢迎通过 [GitHub Discussions](https://github.com/bokmark/ai-game-studio/discussions) 贡献。*
 
 ## 许可证
 

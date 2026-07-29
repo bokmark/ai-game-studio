@@ -1,6 +1,6 @@
 > [中文翻译](CLAUDE.zh-CN.md)
 
-# Claude Code Game Studios -- Game Studio Agent Architecture
+# AI Game Studios -- Game Studio Agent Architecture
 
 Indie game development managed through 49 coordinated Claude Code subagents.
 Each agent owns a specific domain, enforcing separation of concerns and quality.
