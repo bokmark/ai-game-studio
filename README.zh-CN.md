@@ -20,8 +20,6 @@
   <a href=".claude/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
   <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-f5f5f5?logo=anthropic" alt="Built for Claude Code"></a>
   <a href="https://developers.openai.com/codex"><img src="https://img.shields.io/badge/also%20runs%20on-OpenAI%20Codex-000000?logo=openai" alt="Also runs on OpenAI Codex"></a>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
 
 ---
@@ -50,7 +48,7 @@
 - [自定义](#自定义)
 - [平台支持](#平台支持)
 - [社区](#社区)
-- [支持本项目](#支持本项目)
+- [来源与致谢](#来源与致谢)
 - [许可证](#许可证)
 
 ---
@@ -326,20 +324,9 @@ production/                         # Sprint 计划、里程碑、发布跟踪
 
 ---
 
-## 支持本项目
+## 来源与致谢
 
-AI Game Studios 是自由开源软件。如果它为你节省了时间或帮助你发布了游戏,可以考虑支持其持续开发:
-
-<p>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  &nbsp;
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
-</p>
-
-- **[Buy Me a Coffee](https://www.buymeacoffee.com/donchitos3)** ——一次性支持
-- **[GitHub Sponsors](https://github.com/sponsors/Donchitos)** ——通过 GitHub 周期性支持
-
-赞助将用于维护技能、新增代理、跟进 Claude Code 与引擎 API 变更,以及回复社区 issue 所投入的时间。
+本项目复制自 **[Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios.git)**(作者:[@Donchitos](https://github.com/Donchitos)),并在此基础上扩展了 OpenAI Codex 支持与中英双语文档。原始工作室框架——代理、技能、钩子、规则与模板——的全部功劳属于上游作者。如果这个框架帮到了你,欢迎通过原作者的 [GitHub Sponsors](https://github.com/sponsors/Donchitos) 页面支持原版项目。
 
 ---
 
