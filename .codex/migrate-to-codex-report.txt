@@ -1,0 +1,259 @@
+Migration inventory:
+  active: instruction files - 1 found
+    - CLAUDE.md
+  active: skills - 73 found
+    - adopt
+    - architecture-decision
+    - architecture-review
+    - art-bible
+    - asset-audit
+    - asset-spec
+    - balance-check
+    - brainstorm
+    - bug-report
+    - bug-triage
+    - changelog
+    - code-review
+    - consistency-check
+    - content-audit
+    - create-architecture
+    - create-control-manifest
+    - create-epics
+    - create-stories
+    - day-one-patch
+    - design-review
+    - design-system
+    - dev-story
+    - estimate
+    - gate-check
+    - help
+    - hotfix
+    - launch-checklist
+    - localize
+    - map-systems
+    - milestone-review
+    - onboard
+    - patch-notes
+    - perf-profile
+    - playtest-report
+    - project-stage-detect
+    - propagate-design-change
+    - prototype
+    - qa-plan
+    - quick-design
+    - regression-suite
+    - release-checklist
+    - retrospective
+    - reverse-document
+    - review-all-gdds
+    - scope-check
+    - security-audit
+    - setup-engine
+    - skill-improve
+    - skill-test
+    - smoke-check
+    - soak-test
+    - sprint-plan
+    - sprint-status
+    - start
+    - story-done
+    - story-readiness
+    - team-audio
+    - team-combat
+    - team-level
+    - team-live-ops
+    - team-narrative
+    - team-polish
+    - team-qa
+    - team-release
+    - team-ui
+    - tech-debt
+    - test-evidence-review
+    - test-flakiness
+    - test-helpers
+    - test-setup
+    - ux-design
+    - ux-review
+    - vertical-slice
+  inactive: command sources - none found
+  active: subagents - 49 found
+    - accessibility-specialist
+    - ai-programmer
+    - analytics-engineer
+    - art-director
+    - audio-director
+    - community-manager
+    - creative-director
+    - devops-engineer
+    - economy-designer
+    - engine-programmer
+    - game-designer
+    - gameplay-programmer
+    - godot-csharp-specialist
+    - godot-gdextension-specialist
+    - godot-gdscript-specialist
+    - godot-shader-specialist
+    - godot-specialist
+    - lead-programmer
+    - level-designer
+    - live-ops-designer
+    - localization-lead
+    - narrative-director
+    - network-programmer
+    - performance-analyst
+    - producer
+    - prototyper
+    - qa-lead
+    - qa-tester
+    - release-manager
+    - security-engineer
+    - sound-designer
+    - systems-designer
+    - technical-artist
+    - technical-director
+    - tools-programmer
+    - ue-blueprint-specialist
+    - ue-gas-specialist
+    - ue-replication-specialist
+    - ue-umg-specialist
+    - ui-programmer
+    - unity-addressables-specialist
+    - unity-dots-specialist
+    - unity-shader-specialist
+    - unity-specialist
+    - unity-ui-specialist
+    - unreal-specialist
+    - ux-designer
+    - world-builder
+    - writer
+Migration surfaces:
+  active: AGENTS.md - 1 instruction file(s) found.
+  active: skills - 73 skill(s) converted.
+  active: MCP config - 0 MCP server(s) converted into config.toml.
+  active: subagents - 49 subagent(s) converted.
+Migration report:
+  manual_fix_required: AGENTS.md - Generated copy contains Claude-only instruction semantics.
+  rewritten: .codex/hooks.json - Unsupported Claude hook fields need review: `hooks.Notification`, `hooks.PostCompact`, `hooks.PreCompact`, `hooks.Stop.matcher`, `hooks.SubagentStart`, `hooks.SubagentStop`. Rewritten for Codex hooks; review behavior before relying on it. Codex hooks require `[features].codex_hooks = true`, only execute `command` handlers, skip `async` / `prompt` / `agent` handlers, ignore `matcher` for `UserPromptSubmit` and `Stop`, and `PreToolUse` / `PostToolUse` currently run for shell commands only.
+  manual_fix_required: .agents/skills/adopt/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/architecture-decision/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/architecture-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/art-bible/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/asset-audit/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/asset-spec/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/balance-check/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/brainstorm/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/bug-report/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/bug-triage/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/changelog/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `!git tag --list --sort=-v`, `argument-hint`, `context`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/code-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/consistency-check/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/content-audit/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/create-architecture/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/create-control-manifest/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/create-epics/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/create-stories/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/day-one-patch/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/design-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/design-system/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/dev-story/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/estimate/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/gate-check/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/help/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `!echo "=== Live Project State ===" && echo "Stage`, `argument-hint`, `context`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/hotfix/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/launch-checklist/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/localize/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/map-systems/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/milestone-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/onboard/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/patch-notes/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/perf-profile/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/playtest-report/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/project-stage-detect/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/propagate-design-change/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/prototype/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `isolation`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/qa-plan/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/quick-design/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/regression-suite/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/release-checklist/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/retrospective/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/reverse-document/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/review-all-gdds/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/scope-check/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/security-audit/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/setup-engine/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/skill-improve/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/skill-test/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/smoke-check/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/soak-test/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/sprint-plan/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `context`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/sprint-status/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/start/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/story-done/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/story-readiness/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-audio/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-combat/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-level/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-live-ops/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-narrative/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-polish/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-qa/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-release/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/team-ui/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/tech-debt/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/test-evidence-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/test-flakiness/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/test-helpers/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/test-setup/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/ux-design/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/ux-review/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `model`, `user-invocable`.
+  manual_fix_required: .agents/skills/vertical-slice/SKILL.md - Manual review required for Claude skill fields: `allowed-tools`, `agent`, `argument-hint`, `isolation`, `model`, `user-invocable`.
+  rewritten: .codex/config.toml - Converted 0 MCP server entries.
+  manual_fix_required: .codex/agents/accessibility-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ai-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/analytics-engineer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/art-director.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/audio-director.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/community-manager.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`.
+  manual_fix_required: .codex/agents/creative-director.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/devops-engineer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/economy-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/engine-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/game-designer.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/gameplay-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/godot-csharp-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/godot-gdextension-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/godot-gdscript-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/godot-shader-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/godot-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/lead-programmer.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/level-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/live-ops-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`.
+  manual_fix_required: .codex/agents/localization-lead.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/narrative-director.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/network-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/performance-analyst.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/producer.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/prototyper.toml - Manual review required for Claude subagent fields: `tools`, `isolation`, `maxTurns`.
+  manual_fix_required: .codex/agents/qa-lead.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/qa-tester.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/release-manager.toml - Manual review required for Claude subagent fields: `skills`, `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/security-engineer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/sound-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`.
+  manual_fix_required: .codex/agents/systems-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/technical-artist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/technical-director.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/tools-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ue-blueprint-specialist.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ue-gas-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ue-replication-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ue-umg-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ui-programmer.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unity-addressables-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unity-dots-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unity-shader-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unity-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unity-ui-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/unreal-specialist.toml - Manual review required for Claude subagent fields: `tools`, `maxTurns`.
+  manual_fix_required: .codex/agents/ux-designer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/world-builder.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.
+  manual_fix_required: .codex/agents/writer.toml - Manual review required for Claude subagent fields: `tools`, `disallowedTools`, `maxTurns`, `memory`.

@@ -1,0 +1,17 @@
+# Project-level Codex configuration — Game Studio
+# Dual-platform project: .claude/settings.json is the Claude Code mirror.
+
+# Safety posture (mirrors the intent of .claude/settings.json permissions):
+# workspace-write allows project file edits; on-request asks before
+# escalating beyond the sandbox. Claude-side allow/deny command lists have
+# no fine-grained Codex equivalent — see .codex/migrate-to-codex-report.txt.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+
+# Assistant style (per official migrate-to-codex convention).
+personality = "friendly"
+
+[features]
+# Lifecycle hooks wired in .codex/hooks.json
+# (stable and enabled by default in codex-cli >= 0.146; set explicitly)
+hooks = true
