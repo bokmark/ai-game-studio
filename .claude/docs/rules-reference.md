@@ -1,3 +1,5 @@
+> [中文翻译](rules-reference.zh-CN.md)
+
 # Path-Specific Rules
 
 Rules in `.claude/rules/` are automatically enforced when editing files in matching paths:

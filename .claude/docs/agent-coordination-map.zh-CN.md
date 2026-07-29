@@ -1,8 +1,9 @@
-> [中文翻译](agent-coordination-map.zh-CN.md)
+> 中文翻译 | [English](agent-coordination-map.md)
+> 同步基线:commit `41d7e09`(2026-07-29);如有出入以英文版为准。
 
-# Agent Coordination and Delegation Map
+# 代理协调与委派地图
 
-## Organizational Hierarchy
+## 组织层级
 
 ```
                            [Human Developer]
@@ -52,7 +53,8 @@
       godot-gdextension-specialist -- Native: C++/Rust bindings, GDExtension, build systems
 ```
 
-### Legend
+### 图例
+
 ```
 sys  = systems-designer       gp  = gameplay-programmer
 lvl  = level-designer         ep  = engine-programmer
@@ -65,49 +67,49 @@ narr-dir = narrative-director perf-a = performance-analyst
 art-dir = art-director
 ```
 
-## Delegation Rules
+## 委派规则
 
-### Who Can Delegate to Whom
+### 谁可以委派给谁
 
-| From | Can Delegate To |
+| 委派方 | 可委派给 |
 |------|----------------|
-| creative-director | game-designer, art-director, audio-director, narrative-director |
-| technical-director | lead-programmer, devops-engineer, performance-analyst, technical-artist (technical decisions) |
-| producer | Any agent (task assignment within their domain only) |
-| game-designer | systems-designer, level-designer, economy-designer |
-| lead-programmer | gameplay-programmer, engine-programmer, ai-programmer, network-programmer, tools-programmer, ui-programmer |
-| art-director | technical-artist, ux-designer |
+| creative-director | game-designer、art-director、audio-director、narrative-director |
+| technical-director | lead-programmer、devops-engineer、performance-analyst、technical-artist(技术决策) |
+| producer | 任意代理(仅限其领域内的任务分配) |
+| game-designer | systems-designer、level-designer、economy-designer |
+| lead-programmer | gameplay-programmer、engine-programmer、ai-programmer、network-programmer、tools-programmer、ui-programmer |
+| art-director | technical-artist、ux-designer |
 | audio-director | sound-designer |
-| narrative-director | writer, world-builder |
+| narrative-director | writer、world-builder |
 | qa-lead | qa-tester |
-| release-manager | devops-engineer (release builds), qa-lead (release testing) |
-| localization-lead | writer (string review), ui-programmer (text fitting) |
-| prototyper | (works independently, reports findings to producer and relevant leads) |
-| security-engineer | network-programmer (security review), lead-programmer (secure patterns) |
-| accessibility-specialist | ux-designer (accessible patterns), ui-programmer (implementation), qa-tester (a11y testing) |
-| [engine]-specialist | engine sub-specialists (delegates subsystem-specific work) |
-| [engine] sub-specialists | (advises all programmers on engine subsystem patterns and optimization) |
-| live-ops-designer | economy-designer (live economy), community-manager (event comms), analytics-engineer (engagement metrics) |
-| community-manager | (works with producer for approval, release-manager for patch note timing) |
+| release-manager | devops-engineer(发布构建)、qa-lead(发布测试) |
+| localization-lead | writer(字符串审校)、ui-programmer(文本适配) |
+| prototyper | (独立工作,向 producer 及相关主管汇报发现) |
+| security-engineer | network-programmer(安全审查)、lead-programmer(安全模式) |
+| accessibility-specialist | ux-designer(无障碍模式)、ui-programmer(实现)、qa-tester(无障碍测试) |
+| [engine]-specialist | 引擎子专家(委派子系统相关工作) |
+| [engine] 子专家 | (就引擎子系统模式与优化为全体程序员提供咨询) |
+| live-ops-designer | economy-designer(在线经济)、community-manager(活动沟通)、analytics-engineer(参与度指标) |
+| community-manager | (与 producer 协作获取批准,与 release-manager 协作确定补丁说明发布时机) |
 
-### Escalation Paths
+### 升级路径
 
-| Situation | Escalate To |
+| 情形 | 升级给 |
 |-----------|------------|
-| Two designers disagree on a mechanic | game-designer |
-| Game design vs narrative conflict | creative-director |
-| Game design vs technical feasibility | producer (facilitates), then creative-director + technical-director |
-| Art vs audio tonal conflict | creative-director |
-| Code architecture disagreement | technical-director |
-| Cross-system code conflict | lead-programmer, then technical-director |
-| Schedule conflict between departments | producer |
-| Scope exceeds capacity | producer, then creative-director for cuts |
-| Quality gate disagreement | qa-lead, then technical-director |
-| Performance budget violation | performance-analyst flags, technical-director decides |
+| 两名设计师对某一机制意见不合 | game-designer |
+| 游戏设计与叙事冲突 | creative-director |
+| 游戏设计与技术可行性冲突 | producer(居中协调),然后 creative-director + technical-director |
+| 美术与音频基调冲突 | creative-director |
+| 代码架构分歧 | technical-director |
+| 跨系统代码冲突 | lead-programmer,然后 technical-director |
+| 部门间排期冲突 | producer |
+| 范围超出产能 | producer,然后由 creative-director 决定删减 |
+| 质量门分歧 | qa-lead,然后 technical-director |
+| 性能预算超标 | performance-analyst 标记,technical-director 裁决 |
 
-## Common Workflow Patterns
+## 常见工作流模式
 
-### Pattern 1: New Feature (Full Pipeline)
+### 模式 1:新功能(完整流水线)
 
 ```
 1. creative-director  -- Approves feature concept aligns with vision
@@ -125,7 +127,7 @@ art-dir = art-director
 13. producer          -- Marks task complete
 ```
 
-### Pattern 2: Bug Fix
+### 模式 2:缺陷修复
 
 ```
 1. qa-tester          -- Files bug report with /bug-report
@@ -138,7 +140,7 @@ art-dir = art-director
 8. qa-lead            -- Closes bug
 ```
 
-### Pattern 3: Balance Adjustment
+### 模式 3:平衡性调整
 
 ```
 1. analytics-engineer -- Identifies imbalance from data (or player reports)
@@ -150,7 +152,7 @@ art-dir = art-director
 7. analytics-engineer -- Monitor post-change metrics
 ```
 
-### Pattern 4: New Area/Level
+### 模式 4:新区域/关卡
 
 ```
 1. narrative-director -- Defines narrative purpose and beats for the area
@@ -164,7 +166,7 @@ art-dir = art-director
 9. qa-tester          -- Tests the complete area
 ```
 
-### Pattern 5: Sprint Cycle
+### 模式 5:Sprint 周期
 
 ```
 1. producer           -- Plans sprint with /sprint-plan new
@@ -176,7 +178,7 @@ art-dir = art-director
 7. producer           -- Plans next sprint incorporating learnings
 ```
 
-### Pattern 6: Milestone Checkpoint
+### 模式 6:里程碑检查点
 
 ```
 1. producer           -- Runs /milestone-review
@@ -188,7 +190,7 @@ art-dir = art-director
 7. producer           -- Documents decisions and updates plans
 ```
 
-### Pattern 7: Release Pipeline
+### 模式 7:发布流水线
 
 ```text
 1. producer             -- Declares release candidate, confirms milestone criteria met
@@ -203,7 +205,7 @@ art-dir = art-director
 10. producer            -- Marks release complete
 ```
 
-### Pattern 8: Concept Prototype (early — before GDDs)
+### 模式 8:概念原型(早期——在 GDD 之前)
 
 ```text
 1. game-designer        -- Defines the hypothesis and success criteria
@@ -215,7 +217,7 @@ art-dir = art-director
 7. game-designer        -- Informs GDD writing with prototype learnings if PROCEED
 ```
 
-### Pattern 8b: Vertical Slice (pre-production — after GDDs and architecture)
+### 模式 8b:垂直切片(预制作——在 GDD 与架构之后)
 
 ```text
 1. game-designer        -- Confirms slice scope against GDDs
@@ -226,7 +228,7 @@ art-dir = art-director
 6. producer             -- Schedules Production epics/sprints if PROCEED
 ```
 
-### Pattern 9: Live Event / Season Launch
+### 模式 9:在线活动/赛季上线
 
 ```text
 1. live-ops-designer     -- Designs event/season content, rewards, schedule
@@ -243,41 +245,40 @@ art-dir = art-director
 12. live-ops-designer    -- Post-event analysis and learnings
 ```
 
-## Cross-Domain Communication Protocols
+## 跨领域沟通协议
 
-### Design Change Notification
+### 设计变更通知
 
-When a design document changes, the game-designer must notify:
-- lead-programmer (implementation impact)
-- qa-lead (test plan update needed)
-- producer (schedule impact assessment)
-- Relevant specialist agents depending on the change
+设计文档发生变更时,game-designer 必须通知:
+- lead-programmer(实现影响)
+- qa-lead(需要更新测试计划)
+- producer(排期影响评估)
+- 视变更内容而定的相关专家代理
 
-### Architecture Change Notification
+### 架构变更通知
 
-When an ADR is created or modified, the technical-director must notify:
-- lead-programmer (code changes needed)
-- All affected specialist programmers
-- qa-lead (testing strategy may change)
-- producer (schedule impact)
+ADR 创建或修改时,technical-director 必须通知:
+- lead-programmer(需要改动代码)
+- 所有受影响的专家程序员
+- qa-lead(测试策略可能变化)
+- producer(排期影响)
 
-### Asset Standard Change Notification
+### 资产标准变更通知
 
-When the art bible or asset standards change, the art-director must notify:
-- technical-artist (pipeline changes)
-- All content creators working with affected assets
-- devops-engineer (if build pipeline is affected)
+美术圣经或资产标准变更时,art-director 必须通知:
+- technical-artist(管线变更)
+- 所有使用受影响资产的内容创作者
+- devops-engineer(若构建管线受影响)
 
-## Anti-Patterns to Avoid
+## 应避免的反模式
 
-1. **Bypassing the hierarchy**: A specialist agent should never make decisions
-   that belong to their lead without consultation.
-2. **Cross-domain implementation**: An agent should never modify files outside
-   their designated area without explicit delegation from the relevant owner.
-3. **Shadow decisions**: All decisions must be documented. Verbal agreements
-   without written records lead to contradictions.
-4. **Monolithic tasks**: Every task assigned to an agent should be completable
-   in 1-3 days. If it is larger, it must be broken down first.
-5. **Assumption-based implementation**: If a spec is ambiguous, the implementer
-   must ask the specifier rather than guessing. Wrong guesses are more expensive
-   than a question.
+1. **绕过层级**:专家代理绝不应在未咨询其主管的情况下,
+   擅自做出属于主管职责的决策。
+2. **跨领域实现**:代理绝不应在未获相关负责人明确委派的情况下,
+   修改其指定范围之外的文件。
+3. **影子决策**:所有决策必须记录在案。没有书面记录的口头约定
+   会导致前后矛盾。
+4. **巨型任务**:分配给代理的每项任务应可在 1-3 天内完成。
+   若超出,必须先拆分。
+5. **基于猜测的实现**:若规格说明有歧义,实现者必须向规格制定者
+   求证,而不是靠猜。猜错的代价比提一个问题高得多。

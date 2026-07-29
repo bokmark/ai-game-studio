@@ -1,3 +1,5 @@
+> [中文翻译](coordination-rules.zh-CN.md)
+
 # Agent Coordination Rules
 
 1. **Vertical Delegation**: Leadership agents delegate to department leads, who

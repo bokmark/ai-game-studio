@@ -1,3 +1,5 @@
+> [中文翻译](review-workflow.zh-CN.md)
+
 # Review Workflow
 
 1. Code changes require review by the relevant department lead agent

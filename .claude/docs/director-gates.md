@@ -1,3 +1,5 @@
+> [中文翻译](director-gates.zh-CN.md)
+
 # Director Gates — Shared Review Pattern
 
 This document defines the standard gate prompts for all director and lead reviews

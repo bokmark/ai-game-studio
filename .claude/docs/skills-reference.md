@@ -1,3 +1,5 @@
+> [中文翻译](skills-reference.zh-CN.md)
+
 # Available Skills (Slash Commands)
 
 73 slash commands organized by phase. Type `/` in Claude Code to access any of them.

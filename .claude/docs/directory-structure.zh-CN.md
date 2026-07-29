@@ -1,6 +1,7 @@
-> [中文翻译](directory-structure.zh-CN.md)
+> 中文翻译 | [English](directory-structure.md)
+> 同步基线:commit `41d7e09`(2026-07-29);如有出入以英文版为准。
 
-# Directory Structure
+# 目录结构
 
 ```text
 /

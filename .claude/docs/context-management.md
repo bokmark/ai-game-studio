@@ -1,3 +1,5 @@
+> [中文翻译](context-management.zh-CN.md)
+
 # Context Management
 
 Context is the most critical resource in a Claude Code session. Manage it actively.

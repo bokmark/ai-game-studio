@@ -1,3 +1,5 @@
+> [中文翻译](WORKFLOW-GUIDE.zh-CN.md)
+
 # Claude Code Game Studios -- Complete Workflow Guide
 
 > **How to go from zero to a shipped game using the Agent Architecture.**

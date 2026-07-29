@@ -1,3 +1,5 @@
+> [中文翻译](coding-standards.zh-CN.md)
+
 # Coding Standards
 
 - All game code must include doc comments on public APIs

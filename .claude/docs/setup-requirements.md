@@ -1,3 +1,5 @@
+> [中文翻译](setup-requirements.zh-CN.md)
+
 # Setup Requirements
 
 This template requires a few tools to be installed for full functionality.

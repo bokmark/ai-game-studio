@@ -1,3 +1,5 @@
+> [中文翻译](CLAUDE.zh-CN.md)
+
 # Docs Directory
 
 When authoring or editing files in this directory, follow these standards.

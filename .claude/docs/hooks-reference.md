@@ -1,3 +1,5 @@
+> [中文翻译](hooks-reference.zh-CN.md)
+
 # Active Hooks
 
 Hooks are configured in `.claude/settings.json` and fire automatically:

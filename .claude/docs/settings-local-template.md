@@ -1,3 +1,5 @@
+> [中文翻译](settings-local-template.zh-CN.md)
+
 # settings.local.json Template
 
 Create `.claude/settings.local.json` for personal overrides that should NOT

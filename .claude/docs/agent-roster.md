@@ -1,3 +1,5 @@
+> [中文翻译](agent-roster.zh-CN.md)
+
 # Agent Roster
 
 The following agents are available. Each has a dedicated definition file in

@@ -1,3 +1,5 @@
+> [中文翻译](technical-preferences.zh-CN.md)
+
 # Technical Preferences
 
 <!-- Populated by /setup-engine. Updated as the user makes decisions throughout development. -->

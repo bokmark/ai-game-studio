@@ -1,3 +1,5 @@
+> [中文翻译](quick-start.zh-CN.md)
+
 # Game Studio Agent Architecture -- Quick Start Guide
 
 ## What Is This?
