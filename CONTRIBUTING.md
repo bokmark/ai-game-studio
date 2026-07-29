@@ -1,3 +1,5 @@
+> [中文翻译](CONTRIBUTING.zh-CN.md)
+
 # Contributing to Claude Code Game Studios
 
 CCGS is a coordination framework for indie game development using Claude Code.

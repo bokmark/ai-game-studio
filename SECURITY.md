@@ -1,3 +1,5 @@
+> [中文翻译](SECURITY.zh-CN.md)
+
 # Security Policy
 
 ## Supported Versions

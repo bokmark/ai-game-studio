@@ -1,3 +1,5 @@
+> [中文翻译](README.zh-CN.md)
+
 <p align="center">
   <h1 align="center">Claude Code Game Studios</h1>
   <p align="center">

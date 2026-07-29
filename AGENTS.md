@@ -1,3 +1,5 @@
+> [中文翻译](AGENTS.zh-CN.md)
+
 # Game Studio — Codex Agent Instructions
 
 Indie game development managed through 49 coordinated custom agents.

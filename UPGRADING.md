@@ -1,3 +1,5 @@
+> [中文翻译](UPGRADING.zh-CN.md)
+
 # Upgrading Claude Code Game Studios
 
 This guide covers upgrading your existing game project repo from one version
