@@ -1,3 +1,5 @@
+> [中文翻译](post-mortem.zh-CN.md)
+
 # Post-Mortem: [Milestone/Project Name]
 
 ## Document Status

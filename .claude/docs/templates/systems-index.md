@@ -1,3 +1,5 @@
+> [中文翻译](systems-index.zh-CN.md)
+
 # Systems Index: [Game Title]
 
 > **Status**: [Draft / Under Review / Approved]

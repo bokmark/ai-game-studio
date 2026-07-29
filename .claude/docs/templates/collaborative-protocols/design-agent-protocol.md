@@ -1,3 +1,5 @@
+> [中文翻译](design-agent-protocol.zh-CN.md)
+
 # Collaborative Protocol for Design Agents
 
 Insert this section after the "You are..." introduction and before "Key Responsibilities":

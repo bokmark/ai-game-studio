@@ -1,3 +1,5 @@
+> [中文翻译](interaction-pattern-library.zh-CN.md)
+
 # Interaction Pattern Library: [Game Title]
 
 > **Status**: Draft | Stable | Under Revision

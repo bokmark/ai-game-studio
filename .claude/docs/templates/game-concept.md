@@ -1,3 +1,5 @@
+> [中文翻译](game-concept.zh-CN.md)
+
 # Game Concept: [Working Title]
 
 *Created: [Date]*

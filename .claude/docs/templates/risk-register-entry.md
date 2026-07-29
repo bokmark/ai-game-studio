@@ -1,3 +1,5 @@
+> [中文翻译](risk-register-entry.zh-CN.md)
+
 # Risk: [Short Title]
 
 ## Identification

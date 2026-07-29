@@ -1,3 +1,5 @@
+> [中文翻译](vertical-slice-report.zh-CN.md)
+
 # Vertical Slice Report: [Concept Name]
 
 > **Date**: [YYYY-MM-DD]

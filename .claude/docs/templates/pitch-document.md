@@ -1,3 +1,5 @@
+> [中文翻译](pitch-document.zh-CN.md)
+
 # Game Pitch: [Title]
 
 *Version: [Draft Number]*

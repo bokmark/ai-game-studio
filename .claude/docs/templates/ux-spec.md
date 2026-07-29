@@ -1,3 +1,5 @@
+> [中文翻译](ux-spec.zh-CN.md)
+
 # UX Specification: [Screen / Flow Name]
 
 > **Status**: Draft | In Review | Approved | Implemented

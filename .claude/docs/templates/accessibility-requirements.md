@@ -1,3 +1,5 @@
+> [中文翻译](accessibility-requirements.zh-CN.md)
+
 # Accessibility Requirements: [Game Title]
 
 > **Status**: Draft | Committed | Audited | Certified

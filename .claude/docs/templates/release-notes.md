@@ -1,3 +1,5 @@
+> [中文翻译](release-notes.zh-CN.md)
+
 # Release Notes: [Game Title] v[Version]
 
 *Released: [Date]*

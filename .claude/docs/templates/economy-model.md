@@ -1,3 +1,5 @@
+> [中文翻译](economy-model.zh-CN.md)
+
 # Economy Model: [System Name]
 
 *Created: [Date]*

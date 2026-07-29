@@ -1,3 +1,5 @@
+> [中文翻译](architecture-doc-from-code.zh-CN.md)
+
 # ADR: [Decision Name]
 
 ---

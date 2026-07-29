@@ -1,3 +1,5 @@
+> [中文翻译](concept-doc-from-prototype.zh-CN.md)
+
 # [Prototype Name] — Concept Document
 
 ---

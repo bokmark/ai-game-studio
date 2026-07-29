@@ -1,3 +1,5 @@
+> [中文翻译](release-checklist-template.zh-CN.md)
+
 # Release Checklist: [Version] -- [Platform]
 
 **Release Date**: [Target Date]

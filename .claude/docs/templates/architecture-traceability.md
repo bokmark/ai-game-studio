@@ -1,3 +1,5 @@
+> [中文翻译](architecture-traceability.zh-CN.md)
+
 # Architecture Traceability Index
 
 <!-- Living document — updated by /architecture-review after each review run.

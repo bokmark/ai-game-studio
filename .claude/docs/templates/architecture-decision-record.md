@@ -1,3 +1,5 @@
+> [中文翻译](architecture-decision-record.zh-CN.md)
+
 # ADR-[NNNN]: [Title]
 
 ## Status

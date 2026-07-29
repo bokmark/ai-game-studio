@@ -1,3 +1,5 @@
+> [中文翻译](faction-design.zh-CN.md)
+
 # Faction Design: [Faction Name]
 
 *Created: [Date]*

@@ -1,3 +1,5 @@
+> [中文翻译](changelog-template.zh-CN.md)
+
 # What's New in [Version]
 
 **Release Date**: [Date]

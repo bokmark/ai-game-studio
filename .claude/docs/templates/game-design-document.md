@@ -1,3 +1,5 @@
+> [中文翻译](game-design-document.zh-CN.md)
+
 # [Mechanic/System Name]
 
 > **Status**: Draft | In Review | Approved | Implemented

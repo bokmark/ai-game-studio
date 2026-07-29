@@ -1,3 +1,5 @@
+> [中文翻译](design-doc-from-implementation.zh-CN.md)
+
 # [System Name] — Design Document
 
 ---

@@ -1,3 +1,5 @@
+> [中文翻译](prototype-report.zh-CN.md)
+
 # Concept Prototype Report: [Concept Name]
 
 > **Date**: [YYYY-MM-DD]

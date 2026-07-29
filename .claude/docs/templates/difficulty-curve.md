@@ -1,3 +1,5 @@
+> [中文翻译](difficulty-curve.zh-CN.md)
+
 # Difficulty Curve: [Game Title]
 
 > **Status**: Draft | In Review | Approved

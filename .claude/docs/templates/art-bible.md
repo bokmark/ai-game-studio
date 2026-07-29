@@ -1,3 +1,5 @@
+> [中文翻译](art-bible.zh-CN.md)
+
 # Art Bible: [Game Title]
 
 ## Document Status

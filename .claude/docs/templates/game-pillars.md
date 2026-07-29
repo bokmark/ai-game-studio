@@ -1,3 +1,5 @@
+> [中文翻译](game-pillars.zh-CN.md)
+
 # Game Pillars: [Game Title]
 
 ## Document Status

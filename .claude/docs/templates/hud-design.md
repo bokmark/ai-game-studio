@@ -1,3 +1,5 @@
+> [中文翻译](hud-design.zh-CN.md)
+
 # HUD Design: [Game Name]
 
 > **Status**: Draft | In Review | Approved | Implemented

@@ -1,3 +1,5 @@
+> [中文翻译](project-stage-report.zh-CN.md)
+
 # Project Stage Analysis Report
 
 **Generated**: [DATE]

@@ -1,3 +1,5 @@
+> [中文翻译](sprint-plan.zh-CN.md)
+
 # Sprint [N] — [Start Date] to [End Date]
 
 ## Sprint Goal

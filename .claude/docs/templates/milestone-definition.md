@@ -1,3 +1,5 @@
+> [中文翻译](milestone-definition.zh-CN.md)
+
 # Milestone: [Name]
 
 ## Overview

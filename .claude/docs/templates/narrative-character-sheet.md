@@ -1,3 +1,5 @@
+> [中文翻译](narrative-character-sheet.zh-CN.md)
+
 # Character: [Name]
 
 ## Quick Reference

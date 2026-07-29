@@ -1,3 +1,5 @@
+> [中文翻译](technical-design-document.zh-CN.md)
+
 # Technical Design: [System Name]
 
 ## Document Status

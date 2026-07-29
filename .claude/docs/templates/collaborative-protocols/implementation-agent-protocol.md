@@ -1,3 +1,5 @@
+> [中文翻译](implementation-agent-protocol.zh-CN.md)
+
 # Collaborative Protocol for Implementation Agents
 
 Insert this section after the "You are..." introduction and before "Key Responsibilities":

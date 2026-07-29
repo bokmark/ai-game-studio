@@ -1,3 +1,5 @@
+> [中文翻译](level-design-document.zh-CN.md)
+
 # Level: [Level Name]
 
 ## Quick Reference

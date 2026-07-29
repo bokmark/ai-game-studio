@@ -1,3 +1,5 @@
+> [中文翻译](test-plan.zh-CN.md)
+
 # QA Plan: [Sprint/Feature Name]
 
 > **Date**: [date]

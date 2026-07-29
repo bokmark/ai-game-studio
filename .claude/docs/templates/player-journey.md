@@ -1,3 +1,5 @@
+> [中文翻译](player-journey.zh-CN.md)
+
 # Player Journey Map: [Game Title]
 
 > **Status**: Draft | In Review | Approved

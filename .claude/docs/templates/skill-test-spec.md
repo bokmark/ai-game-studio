@@ -1,3 +1,5 @@
+> [中文翻译](skill-test-spec.zh-CN.md)
+
 # Skill Test Spec: /[skill-name]
 
 ## Skill Summary

@@ -1,3 +1,5 @@
+> [中文翻译](sound-bible.zh-CN.md)
+
 # Sound Bible: [Project Name]
 
 ## Audio Vision

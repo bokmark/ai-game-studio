@@ -1,3 +1,5 @@
+> [中文翻译](test-evidence.zh-CN.md)
+
 # Test Evidence: [Story Title]
 
 > **Story**: `[path to story file]`

@@ -1,3 +1,5 @@
+> [中文翻译](incident-response.zh-CN.md)
+
 # Incident Response: [Incident Title]
 
 **Severity**: [S1-Critical / S2-Major / S3-Moderate / S4-Minor]
