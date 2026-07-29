@@ -3,9 +3,11 @@
 <p align="center">
   <h1 align="center">Claude Code Game Studios</h1>
   <p align="center">
-    Turn a single Claude Code session into a full game development studio.
+    Turn a single AI session into a full game development studio.
     <br />
     49 agents. 73 skills. One coordinated AI team.
+    <br />
+    Runs on <strong>Claude Code</strong> and <strong>OpenAI Codex</strong>.
   </p>
 </p>
 
@@ -16,6 +18,7 @@
   <a href=".claude/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".claude/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
   <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-f5f5f5?logo=anthropic" alt="Built for Claude Code"></a>
+  <a href="https://developers.openai.com/codex"><img src="https://img.shields.io/badge/also%20runs%20on-OpenAI%20Codex-000000?logo=openai" alt="Also runs on OpenAI Codex"></a>
   <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
   <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
@@ -35,6 +38,7 @@ The result: you still make every decision, but now you have a team that asks the
 ## Table of Contents
 
 - [What's Included](#whats-included)
+- [Dual-Platform Support](#dual-platform-support)
 - [Studio Hierarchy](#studio-hierarchy)
 - [Slash Commands](#slash-commands)
 - [Getting Started](#getting-started)
@@ -59,6 +63,23 @@ The result: you still make every decision, but now you have a team that asks the
 | **Hooks** | 12 | Automated validation on commits, pushes, asset changes, session lifecycle, agent audit trail, and gap detection |
 | **Rules** | 11 | Path-scoped coding standards enforced when editing gameplay, engine, AI, UI, network code, and more |
 | **Templates** | 41 | Document templates for GDDs, UX specs, ADRs, sprint plans, HUD design, accessibility, and more |
+
+## Dual-Platform Support
+
+The studio runs on both major AI coding platforms. The same agents, skills, and workflows are available in each — pick the platform you already use:
+
+| Capability | Claude Code | OpenAI Codex |
+|------------|-------------|--------------|
+| Entry point | `CLAUDE.md` | `AGENTS.md` |
+| Agents (49) | `.claude/agents/` (Markdown + YAML) | `.codex/agents/` (TOML) |
+| Skills | `.claude/skills/` — invoke as `/skill` | `.agents/skills/` — invoke as `$skill` |
+| Configuration | `.claude/settings.json` | `.codex/config.toml` |
+| Hooks | `.claude/hooks/` | `.codex/hooks.json` + `.codex/hooks/` |
+| Path-scoped rules | `.claude/rules/` | Nested `AGENTS.md` in rule-scoped directories |
+
+The two platform trees are kept in sync — features land on both. `.claude/` remains the reference implementation; the Codex tree mirrors it. Codex skills include two extras (`$session-save`, `$session-restore`) that replace Claude Code's compaction hooks, which Codex does not have.
+
+> **Note**: Upstream template updates (from the original Claude-Code-Game-Studios repo) only touch `.claude/`. When pulling upstream changes, re-sync the Codex tree — see the dual-platform notes in [UPGRADING.md](UPGRADING.md).
 
 ## Studio Hierarchy
 
@@ -96,7 +117,7 @@ The template includes agent sets for all three major engines. Use the set that m
 
 ## Slash Commands
 
-Type `/` in Claude Code to access all 73 skills:
+Type `/` in Claude Code (or `$` in Codex) to access all 73 skills:
 
 **Onboarding & Navigation**
 `/start` `/help` `/project-stage-detect` `/setup-engine` `/adopt`
@@ -139,7 +160,9 @@ Type `/` in Claude Code to access all 73 skills:
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (`npm install -g @anthropic-ai/claude-code`)
+- One of the supported platforms:
+  - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (`npm install -g @anthropic-ai/claude-code`), **or**
+  - [OpenAI Codex](https://developers.openai.com/codex/cli) (`npm install -g @openai/codex`)
 - **Recommended**: [jq](https://jqlang.github.io/jq/) (for hook validation) and Python 3 (for JSON validation)
 
 All hooks fail gracefully if optional tools are missing — nothing breaks, you just lose validation.
@@ -148,22 +171,24 @@ All hooks fail gracefully if optional tools are missing — nothing breaks, you 
 
 1. **Clone or use as template**:
    ```bash
-   git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
+   git clone https://github.com/bokmark/ai-game-studio.git my-game
    cd my-game
    ```
 
-2. **Open Claude Code** and start a session:
+2. **Open your platform** and start a session:
    ```bash
-   claude
+   claude   # Claude Code
+   codex    # OpenAI Codex
    ```
 
-3. **Run `/start`** — the system asks where you are (no idea, vague concept,
-   clear design, existing work) and guides you to the right workflow. No assumptions.
+3. **Run `/start`** (Claude Code) or **`$start`** (Codex) — the system asks
+   where you are (no idea, vague concept, clear design, existing work) and
+   guides you to the right workflow. No assumptions.
 
    Or jump directly to a specific skill if you already know what you need:
-   - `/brainstorm` — explore game ideas from scratch
-   - `/setup-engine godot 4.6` — configure your engine if you already know
-   - `/project-stage-detect` — analyze an existing project
+   - `/brainstorm` or `$brainstorm` — explore game ideas from scratch
+   - `/setup-engine godot 4.6` or `$setup-engine godot 4.6` — configure your engine if you already know
+   - `/project-stage-detect` or `$project-stage-detect` — analyze an existing project
 
 ## Upgrading
 
@@ -174,7 +199,8 @@ versions, and which files are safe to overwrite vs. which need a manual merge.
 ## Project Structure
 
 ```
-CLAUDE.md                           # Master configuration
+CLAUDE.md                           # Master configuration (Claude Code)
+AGENTS.md                           # Master configuration (Codex)
 .claude/
   settings.json                     # Hooks, permissions, safety rules
   agents/                           # 49 agent definitions (markdown + YAML frontmatter)
@@ -185,6 +211,13 @@ CLAUDE.md                           # Master configuration
   docs/
     workflow-catalog.yaml           # 7-phase pipeline definition (read by /help)
     templates/                      # 41 document templates
+.codex/
+  config.toml                       # Codex sandbox, approval, and feature settings
+  hooks.json                        # Codex hook wiring
+  hooks/                            # Codex hook scripts
+  agents/                           # 49 agent definitions (TOML)
+.agents/
+  skills/                           # 75 Codex skills (73 mirrored + session-save/restore)
 src/                                # Game source code
 assets/                             # Art, audio, VFX, shaders, data files
 design/                             # GDDs, narrative docs, level designs
@@ -239,6 +272,8 @@ You stay in control. The agents provide structure and expertise, not autonomy.
 | `validate-skill-change.sh` | PostToolUse (Write/Edit) | Advises running `/skill-test` after any `.claude/skills/` change |
 
 > **Note**: `validate-commit.sh`, `validate-assets.sh`, and `validate-skill-change.sh` fire on every Bash/Write tool call and exit immediately (exit 0) when the command or file path is not relevant. This is normal hook behavior — not a performance concern.
+
+> **Codex hooks**: The Codex platform supports fewer hook events, so the Codex tree wires `SessionStart`, `PreToolUse` (shell commands), and `Stop` via `.codex/hooks.json`. Commit/push validation runs on shell commands, and asset/skill-change validation is folded into Stop-time quality checks. Coverage is equivalent; timing differs.
 
 **Permission rules** in `settings.json` auto-allow safe operations (git status, test runs) and block dangerous ones (force push, `rm -rf`, reading `.env` files).
 
@@ -307,7 +342,7 @@ Sponsorships help fund time spent maintaining skills, adding new agents, keeping
 
 ---
 
-*Built for Claude Code. Maintained and extended — contributions welcome via [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions).*
+*Built for Claude Code and OpenAI Codex. Maintained and extended — contributions welcome via [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions).*
 
 ## License
 

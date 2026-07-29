@@ -1,12 +1,14 @@
 > 中文翻译 | [English](README.md)
-> 同步基线:commit `0de6c40`(2026-07-29);如有出入以英文版为准。
+> 同步基线:commit `0de6c40`(2026-07-29)+ 双平台 README 同步;如有出入以英文版为准。
 
 <p align="center">
   <h1 align="center">Claude Code Game Studios</h1>
   <p align="center">
-    把一个 Claude Code 会话变成一个完整的游戏开发工作室。
+    把一个 AI 会话变成一个完整的游戏开发工作室。
     <br />
     49 个代理。73 个技能。一支协同的 AI 团队。
+    <br />
+    同时支持 <strong>Claude Code</strong> 与 <strong>OpenAI Codex</strong>。
   </p>
 </p>
 
@@ -17,6 +19,7 @@
   <a href=".claude/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".claude/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
   <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-f5f5f5?logo=anthropic" alt="Built for Claude Code"></a>
+  <a href="https://developers.openai.com/codex"><img src="https://img.shields.io/badge/also%20runs%20on-OpenAI%20Codex-000000?logo=openai" alt="Also runs on OpenAI Codex"></a>
   <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
   <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
@@ -36,6 +39,7 @@
 ## 目录
 
 - [包含内容](#包含内容)
+- [双平台支持](#双平台支持)
 - [工作室层级](#工作室层级)
 - [斜杠命令](#斜杠命令)
 - [快速上手](#快速上手)
@@ -60,6 +64,23 @@
 | **钩子(Hooks)** | 12 | 在提交、推送、资产变更、会话生命周期、代理审计追踪和缺口检测时自动校验 |
 | **规则(Rules)** | 11 | 编辑玩法、引擎、AI、UI、网络代码等文件时强制生效的路径作用域编码标准 |
 | **模板(Templates)** | 41 | GDD、UX 规格、ADR、Sprint 计划、HUD 设计、无障碍等文档模板 |
+
+## 双平台支持
+
+本工作室可运行在两大主流 AI 编码平台上。两个平台拥有相同的代理、技能与工作流——选择你已经在用的那个即可:
+
+| 能力 | Claude Code | OpenAI Codex |
+|------------|-------------|--------------|
+| 入口文件 | `CLAUDE.md` | `AGENTS.md` |
+| 代理(49 个) | `.claude/agents/`(Markdown + YAML) | `.codex/agents/`(TOML) |
+| 技能 | `.claude/skills/`——以 `/skill` 调用 | `.agents/skills/`——以 `$skill` 调用 |
+| 配置 | `.claude/settings.json` | `.codex/config.toml` |
+| 钩子 | `.claude/hooks/` | `.codex/hooks.json` + `.codex/hooks/` |
+| 路径作用域规则 | `.claude/rules/` | 各规则作用域目录中的嵌套 `AGENTS.md` |
+
+两棵平台树保持同步——新功能同时落地两边。`.claude/` 仍是参考实现;Codex 树是它的镜像。Codex 技能多出两个(`$session-save`、`$session-restore`),用于替代 Codex 所没有的压缩(compact)钩子。
+
+> **注意**:上游模板更新(来自原版 Claude-Code-Game-Studios 仓库)只改动 `.claude/`。拉取上游变更后需要重新同步 Codex 树——见 [UPGRADING.md](UPGRADING.md) 中的双平台说明。
 
 ## 工作室层级
 
@@ -97,7 +118,7 @@ Tier 3 — 专家(Sonnet/Haiku)
 
 ## 斜杠命令
 
-在 Claude Code 中输入 `/` 即可使用全部 73 个技能:
+在 Claude Code 中输入 `/`(Codex 中输入 `$`)即可使用全部 73 个技能:
 
 **上手与导航**
 `/start` `/help` `/project-stage-detect` `/setup-engine` `/adopt`
@@ -140,7 +161,9 @@ Tier 3 — 专家(Sonnet/Haiku)
 ### 前置要求
 
 - [Git](https://git-scm.com/)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)(`npm install -g @anthropic-ai/claude-code`)
+- 支持的平台二选一:
+  - [Claude Code](https://docs.anthropic.com/en/docs/claude-code)(`npm install -g @anthropic-ai/claude-code`),或
+  - [OpenAI Codex](https://developers.openai.com/codex/cli)(`npm install -g @openai/codex`)
 - **推荐**:[jq](https://jqlang.github.io/jq/)(用于钩子校验)和 Python 3(用于 JSON 校验)
 
 缺少可选工具时所有钩子都会优雅降级——不会出故障,只是失去校验能力。
@@ -149,22 +172,24 @@ Tier 3 — 专家(Sonnet/Haiku)
 
 1. **克隆或作为模板使用**:
    ```bash
-   git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
+   git clone https://github.com/bokmark/ai-game-studio.git my-game
    cd my-game
    ```
 
-2. **打开 Claude Code** 并启动会话:
+2. **打开你的平台**并启动会话:
    ```bash
-   claude
+   claude   # Claude Code
+   codex    # OpenAI Codex
    ```
 
-3. **运行 `/start`** ——系统会询问你当前的状态(没有想法、概念模糊、
-   设计清晰、已有成果),并引导你进入正确的工作流。不做任何假设。
+3. **运行 `/start`**(Claude Code)或 **`$start`**(Codex)——系统会询问
+   你当前的状态(没有想法、概念模糊、设计清晰、已有成果),并引导你
+   进入正确的工作流。不做任何假设。
 
    如果你已经清楚自己要什么,也可以直接跳到某个技能:
-   - `/brainstorm` ——从零开始探索游戏创意
-   - `/setup-engine godot 4.6` ——已确定引擎时直接配置
-   - `/project-stage-detect` ——分析已有项目
+   - `/brainstorm` 或 `$brainstorm` ——从零开始探索游戏创意
+   - `/setup-engine godot 4.6` 或 `$setup-engine godot 4.6` ——已确定引擎时直接配置
+   - `/project-stage-detect` 或 `$project-stage-detect` ——分析已有项目
 
 ## 升级
 
@@ -175,7 +200,8 @@ Tier 3 — 专家(Sonnet/Haiku)
 ## 项目结构
 
 ```
-CLAUDE.md                           # 主配置
+CLAUDE.md                           # 主配置(Claude Code)
+AGENTS.md                           # 主配置(Codex)
 .claude/
   settings.json                     # 钩子、权限、安全规则
   agents/                           # 49 个代理定义(markdown + YAML frontmatter)
@@ -186,6 +212,13 @@ CLAUDE.md                           # 主配置
   docs/
     workflow-catalog.yaml           # 7 阶段流水线定义(由 /help 读取)
     templates/                      # 41 个文档模板
+.codex/
+  config.toml                       # Codex 沙箱、审批与功能设置
+  hooks.json                        # Codex 钩子接线
+  hooks/                            # Codex 钩子脚本
+  agents/                           # 49 个代理定义(TOML)
+.agents/
+  skills/                           # 75 个 Codex 技能(73 个镜像 + session-save/restore)
 src/                                # 游戏源代码
 assets/                             # 美术、音频、VFX、着色器、数据文件
 design/                             # GDD、叙事文档、关卡设计
@@ -240,6 +273,8 @@ production/                         # Sprint 计划、里程碑、发布跟踪
 | `validate-skill-change.sh` | PostToolUse (Write/Edit) | `.claude/skills/` 发生任何变更后建议运行 `/skill-test` |
 
 > **注意**:`validate-commit.sh`、`validate-assets.sh` 和 `validate-skill-change.sh` 会在每次 Bash/Write 工具调用时触发,并在命令或文件路径不相关时立即退出(exit 0)。这是正常的钩子行为——不存在性能问题。
+
+> **Codex 钩子**:Codex 平台支持的钩子事件较少,因此 Codex 树通过 `.codex/hooks.json` 接线 `SessionStart`、`PreToolUse`(shell 命令)和 `Stop`。提交/推送校验在 shell 命令上运行,资产与技能变更校验并入 Stop 时的质量检查。覆盖范围等同,触发时机不同。
 
 `settings.json` 中的**权限规则**自动放行安全操作(git status、运行测试),拦截危险操作(强制推送、`rm -rf`、读取 `.env` 文件)。
 
@@ -308,7 +343,7 @@ Claude Code Game Studios 是自由开源软件。如果它为你节省了时间�
 
 ---
 
-*为 Claude Code 而生。持续维护与扩展——欢迎通过 [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) 贡献。*
+*为 Claude Code 与 OpenAI Codex 而生。持续维护与扩展——欢迎通过 [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) 贡献。*
 
 ## 许可证
 
