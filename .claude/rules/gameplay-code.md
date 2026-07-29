@@ -3,6 +3,8 @@ paths:
   - "src/gameplay/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/gameplay-code.md)
+
 # Gameplay Code Rules
 
 - ALL gameplay values MUST come from external config/data files, NEVER hardcoded

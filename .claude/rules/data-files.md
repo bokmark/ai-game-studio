@@ -3,6 +3,8 @@ paths:
   - "assets/data/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/data-files.md)
+
 # Data File Rules
 
 - All JSON files must be valid JSON — broken JSON blocks the entire build pipeline

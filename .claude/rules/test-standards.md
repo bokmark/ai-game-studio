@@ -3,6 +3,8 @@ paths:
   - "tests/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/test-standards.md)
+
 # Test Standards
 
 - Test naming: `test_[system]_[scenario]_[expected_result]` pattern

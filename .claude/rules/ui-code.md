@@ -3,6 +3,8 @@ paths:
   - "src/ui/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/ui-code.md)
+
 # UI Code Rules
 
 - UI must NEVER own or directly modify game state — display only, use commands/events to request changes

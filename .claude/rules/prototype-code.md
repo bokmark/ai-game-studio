@@ -3,6 +3,8 @@ paths:
   - "prototypes/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/prototype-code.md)
+
 # Prototype Code Standards (Relaxed)
 
 Prototypes are throwaway code for validating ideas. Standards are intentionally

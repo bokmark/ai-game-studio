@@ -3,6 +3,8 @@ paths:
   - "assets/shaders/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/shader-code.md)
+
 # Shader Code Standards
 
 All shader files in `assets/shaders/` must follow these standards to maintain

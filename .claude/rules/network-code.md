@@ -3,6 +3,8 @@ paths:
   - "src/networking/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/network-code.md)
+
 # Network Code Rules
 
 - Server is AUTHORITATIVE for all gameplay-critical state — never trust the client

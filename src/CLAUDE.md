@@ -1,3 +1,5 @@
+> [中文翻译](CLAUDE.zh-CN.md)
+
 # Source Directory
 
 When writing or editing game code in this directory, follow these standards.

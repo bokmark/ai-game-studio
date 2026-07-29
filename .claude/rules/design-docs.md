@@ -3,6 +3,8 @@ paths:
   - "design/gdd/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/design-docs.md)
+
 # Design Document Rules
 
 - Every design document MUST contain these 8 sections: Overview, Player Fantasy, Detailed Rules, Formulas, Edge Cases, Dependencies, Tuning Knobs, Acceptance Criteria

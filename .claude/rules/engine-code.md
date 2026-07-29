@@ -3,6 +3,8 @@ paths:
   - "src/core/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/engine-code.md)
+
 # Engine Code Rules
 
 - ZERO allocations in hot paths (update loops, rendering, physics) — pre-allocate, pool, reuse

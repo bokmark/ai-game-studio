@@ -3,6 +3,8 @@ paths:
   - "src/ai/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/ai-code.md)
+
 # AI Code Rules
 
 - AI update budget: 2ms per frame maximum — profile to verify

@@ -3,6 +3,8 @@ paths:
   - "design/narrative/**"
 ---
 
+> [中文翻译](../../docs/zh-CN/rules/narrative.md)
+
 # Narrative Rules
 
 - All new lore must be cross-referenced against existing lore for contradictions
